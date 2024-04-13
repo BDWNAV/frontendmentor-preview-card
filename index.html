@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: customFontSemibold;
+      src: url("assets/fonts/static/Figtree-SemiBold.ttf");
+    }
+    
+    @font-face {
+      font-family: customFontExtraBold;
+      src: url("assets/fonts/static/Figtree-ExtraBold.ttf");
+    }
+
+    @font-face {
+      font-family: customBasicFont;
+      src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      font-size: 16px;
+    }
+
+    .learning-card {
+      width: 300px;
+      height: 425px;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 8px 8px hsl(0, 0%, 7%);
+      border-left: 2px solid hsl(0, 0%, 7%);
+      border-top: 2px solid hsl(0, 0%, 7%);
+      border-right: 2px solid hsl(0, 0%, 7%);
+      border-bottom: 2px solid hsl(0, 0%, 7%);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .article-image {
+      border-radius: 13px;
+      width: 300px;
+    }
+
+    .learning-card-text {
+      margin-top: 23px;
+    }
+
+    .date {
+      font-family: customFontSemiBold;
+      margin-top: 20px;
+      font-size: 13px;
+    }
+
+    .title {
+      font-family: customFontExtraBold;
+      font-weight: 800;
+      margin-top: 5pxs;
+      font-size: 20px;
+    }
+    
+    .learning-text {
+      font-family: customFontExtraBold;
+      font-size: 14px;
+      padding: 6px;
+      border-radius: 3px;
+      background-color: hsl(47, 88%, 63%);
+    }
+
+    .content-text {
+      font-family: customBasicFont;
+      font-size: 15px;
+      color: hsl(0, 0%, 50%);
+      margin-top: -5px;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+
+    .author {
+      font-family: customFontExtraBold;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+
+    .author-img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="learning-card">
+
+    <img class="article-image" src="./assets/images/illustration-article.svg" />
+
+    <div class="learning-card-text">
+      <span class="learning-text">Learning</span>
+
+      <p class="date">Published 21 Dec 2023</p>
+    
+      <p class="title">HTML & CSS foundations</p>
+    
+      <p class="content-text">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      
+      <div class="author-info">
+        <img class="author-img" src="/assets/images/image-avatar.webp" />
+        <p class="author">Greg Hooper</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bdwnav</a>.
+  </div>
+</body>
+</html>
